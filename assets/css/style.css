@@ -68,6 +68,7 @@
   --fs_53:3.3125rem;
   --fs_50:3.125rem;
   --fs_41:2.5625rem;
+  --fs_30:1.875rem;
   --fs_26:1.625rem;
   --fs_20:1.25rem;
   --fs_16:1rem;
@@ -90,6 +91,7 @@ body {
   background-color: var(--bg_gray);
   padding: var(--space_top) 0rem var(--space_bottom);
 }
+a{color: var(--c_secondary);}
 
 .c_primary{color: var(--c_primary);}
 .c_secondary{color: var(--c_secondary);}
@@ -116,6 +118,7 @@ body {
 .fs_53{font-size: var(--fs_53);}
 .fs_50{font-size: var(--fs_50);}
 .fs_41{font-size: var(--fs_41);}
+.fs_30{font-size: var(--fs_30);}
 .fs_26{font-size: var(--fs_26);}
 .fs_20{font-size: var(--fs_20);}
 .fs_16{font-size: var(--fs_16);}
@@ -545,7 +548,8 @@ body {
   font-size: var(--fs_15);
   margin-bottom: 0.8em;
 }
-.sec_title::after{
+.sec_title::after,
+.underline::after{
   content: "";
   display: block;
   width: 2.625rem;
@@ -825,6 +829,27 @@ body {
 .partners_content{
   max-width: 28.75rem;
   margin: auto;
+}
+
+/* modal */
+.modal{
+  text-transform: uppercase;
+}
+.modal_img{
+  margin-bottom: -1.5rem;
+  transform: scale(1.2);
+  width: 100%;
+  transform-origin: left bottom;
+}
+@media(min-width:1200px){
+  .modal_lg .modal-dialog{
+    max-width: 1048px;
+  }
+  .modal-content{
+    border-radius: 20px;
+    background-color: var(--bg_dark);
+  }
+
 }
 /* ..... end main .....*/
 
