@@ -267,12 +267,24 @@ body {
   left: 10%;
   width: 5rem;
   height: 5rem;
-  background-color: var(--bg_white);
-  transform: translate(-50%,-50%);
+  /* background-color: var(--bg_white); */
+  transform: translate(-50%,-57%);
   border-radius: 100%;
   z-index: -1;
   transition: 0.3s;
   transform-origin: bottom center;
+}
+.nav_indicator::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 240%;
+  background-image: url("../img/home/menu-bg.svg");
+  background-size: contain;
 }
 .header_navbar .nav-item:hover{
   color: var(--c_primary);
@@ -293,10 +305,10 @@ body {
   left: 90%;
 }
 .header_navbar .nav-item.active .nav_icon{
-  transform: translateY(-66%);
+  transform: translateY(-80%);
 }
 .header_navbar .nav-item.active .nav_icon .nav_iconImg{
-  transform: scale(3) translateY(-5%);
+  transform: scale(3) translateY(-7%);
 }
 .header_navbar .nav_badge{
   font-size: var(--fs_9);
@@ -703,6 +715,7 @@ body {
 .game_card{
   color: var(--c_white);
   text-decoration: none;
+  display: block;
 }
 .game_imgBox{
   position: relative;
