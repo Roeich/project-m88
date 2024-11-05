@@ -757,25 +757,25 @@
             <form action="" class="d-block">
                 <div class="modal-content">
                     <div class="modal-header pb-2 border-0">
-                        <button type="button" class="btn-close fs_14 rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="reset" class="btn-close fs_14 rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body pt-2 pb-4">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="ps-3">
+                            <div class="col-lg-6 align-self-center">
+                                <div class="ps-lg-4">
                                     <h2 class="fs_30 underline mb-2">Sign in</h2>
-                                    <p class="fs_10 mb-2">Need an Account? <a href="#">Sign up</a></p>
+                                    <p class="fs_10 mb-2">Need an Account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Sign up</a></p>
                                     <div class="row g-2 mb-3">
                                         <div class="col-12">
                                             <div>
                                                 <label class="fs_12 mb-1">Phone Number</label>
-                                                <input class="form-control" type="tel">
+                                                <input class="form-control" type="tel" placeholder="e.g. 012 3456 789">
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div>
                                                 <label class="fs_12 mb-1">Password</label>
-                                                <input class="form-control" type="text">
+                                                <input class="form-control" type="password" placeholder="6-20 Words">
                                             </div>
                                         </div>
                                         <div class="col-12">
@@ -798,8 +798,78 @@
             </form>
         </div>
     </div>
-      
     <!-- .... end login modal  .... -->
+
+    <!-- .... start register modal  .... -->
+    <div class="modal fade modal_lg" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <form action="" class="d-block">
+                <div class="modal-content">
+                    <div class="modal-header pb-2 border-0">
+                        <button type="reset" class="btn-close fs_14 rounded-pill" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-2 pb-4">
+                        <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                                <div class="ps-lg-4">
+                                    <h2 class="fs_30 underline mb-2">Create an account</h2>
+                                    <p class="fs_10 mb-2">already have an account <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</a></p>
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-md-6">
+                                            <div>
+                                                <label class="fs_12 mb-1">full Name</label>
+                                                <input class="form-control" type="text" placeholder="e.g. Tan Boon Hei">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div>
+                                                <label class="fs_12 mb-1">Phone Number</label>
+                                                <input class="form-control" type="tel" placeholder="e.g. 012 3456 789">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div>
+                                                <label class="fs_12 mb-1">Password </label>
+                                                <input class="form-control" type="password" placeholder="6-20 Words">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div>
+                                                <label class="fs_12 mb-1">Sponsor code (optional)</label>
+                                                <input class="form-control" type="text" placeholder="6-20 Words">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div>
+                                                <label class="fs_12 mb-1">verify code </label>
+                                                <div class="row g-2 align-items-center">
+                                                    <div class="col-6">
+                                                        <input class="form-control" type="text" placeholder="Code">
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <button class="btn btn-outline-light rounded-pill px-3" type="button">Send code</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="pt-2">
+                                                <button class="btn btn_secondary rounded-pill px-5" type="submit">register</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 align-self-end">
+                                <img class="modal_img" src="assets/img/home/login-img.png" alt="login">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- .... end register modal  .... -->
 
     <!-- ______________________ end main section  ______________________ -->
 
