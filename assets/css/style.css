@@ -65,24 +65,24 @@
   --ff_Oswald:"Oswald", sans-serif;
   --ff_Poppins:"Poppins", sans-serif;
 
-  --fs_53:53px;
-  --fs_50:50px;
-  --fs_41:41px;
-  --fs_26:26px;
-  --fs_20:20px;
-  --fs_16:16px;
-  --fs_15:15px;
-  --fs_14:14px;
-  --fs_13:13px;
-  --fs_12:12px;
-  --fs_11:11px;
-  --fs_10:10px;
-  --fs_9:9px;
+  --fs_53:3.3125rem;
+  --fs_50:3.125rem;
+  --fs_41:2.5625rem;
+  --fs_26:1.625rem;
+  --fs_20:1.25rem;
+  --fs_16:1rem;
+  --fs_15:0.9375rem;
+  --fs_14:0.875rem;
+  --fs_13:0.8125rem;
+  --fs_12:0.75rem;
+  --fs_11:0.6875rem;
+  --fs_10:0.625rem;
+  --fs_9:0.5625rem;
 
-  --space_top:118px;
-  --space_bottom:70px;
+  --space_top:7.375rem;
+  --space_bottom:4.365rem;
 
-  --rounded_def:12px;
+  --rounded_def:0.75rem;
 }
 body {
   color: var(--c_light);
@@ -195,15 +195,20 @@ body {
 
 @media(min-width:1200px){
   .container{
-    max-width: 1440px;
+    max-width: 90rem;
   }
   .container_sm{
-    max-width: 1110px;
+    max-width: 69.375rem;
   }
 }
 @media(min-width:1200px){
   .container-fluid{
     max-width: 1920px;
+  }
+}
+@media(min-width:1920px){
+  html{
+    font-size: 20px;
   }
 }
 
@@ -212,16 +217,16 @@ body {
   background-color: var(--bg_dark);
 }
 .header_logo{
-  width: 76px;
-  height: 46px;
+  width: 4.75rem;
+  height: 2.875rem;
 }
 /* header top */
 .header_top{
-  padding: 20px 0px;
+  padding: 1.25rem 0rem;
 }
 .header_lngIcon{
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* header bottom menu */
@@ -285,6 +290,7 @@ body {
   width: 240%;
   background-image: url("../img/home/menu-bg.svg");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .header_navbar .nav-item:hover{
   color: var(--c_primary);
@@ -354,8 +360,8 @@ body {
   background-color: var(--bg_gray);
   background-image: url("../img/home/light.png"),url("../img/home/dice.png");
   background-repeat: no-repeat;
-  background-position: top -50px left 55%, top right -50px;
-  background-size: 210px, 190px;
+  background-position: top -3.125rem left 55%, top right -3.125rem;
+  background-size: 13.125rem, 11.875rem;
   background-blend-mode: screen,normal;
 }
 @media(min-width:768px){
@@ -393,7 +399,7 @@ body {
   width: 100%;
   height: 0rem;
   padding-bottom: 53%;
-  padding-bottom: 180px;
+  padding-bottom: 11.25rem;
   background-color: #0F1621;
   background-image: url("../img/home/card-bg.png");
   background-repeat: no-repeat;
@@ -416,23 +422,23 @@ body {
 }
 .card_content{
   width: 55%;
-  width: calc(100% - 160px);
+  width: calc(100% - 10rem);
   display: flex;
   align-items: center;
   position: relative;
   z-index: 1;
-  padding: 12px 0rem 12px 20px;
+  padding: 0.75rem 0px 0.75rem 1.25rem;
 }
 .card_content>*{
   flex-grow: 1;
 }
 .card_wrap_2 .card_content{
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   width: 100%;
 }
 .card_imgBox{
   width: 45%;
-  width: 160px;
+  width: 10rem;
   display: flex;
   align-items: flex-end;
 }
@@ -453,8 +459,8 @@ body {
   transform: scale(1.2);
 }
 .card_grd{
-  margin-left: -20px;
-  padding-left: 20px;
+  margin-left: -1.25rem;
+  padding-left: 1.25rem;
   background-image: linear-gradient(90deg, rgba(185,44,44,0.9999999999999999) 0%, rgba(0,0,0,0) 100%);
 }
 .card_box .btn{
@@ -505,10 +511,10 @@ body {
 .sec_title::after{
   content: "";
   display: block;
-  width: 42px;
+  width: 2.625rem;
   height: 2px;
   border-radius: 2px;
-  margin-top: 4px;
+  margin-top: 0.25rem;
   background-color: var(--bg_secondary);
 }
 .sec_title.text-center::after{
@@ -609,7 +615,7 @@ body {
   content: "";
   position: absolute;
   top:0px;
-  width: 10px;
+  width: 0.625rem;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -666,8 +672,8 @@ body {
   position: relative;
 }
 .site_tab img{
-  width: 72px;
-  height: 80px;
+  width: 4.5rem;
+  height: 5rem;
   object-fit: contain;
   object-position: bottom center;
   position: relative;
@@ -679,9 +685,9 @@ body {
 .site_tab::before{
   content: "";
   display: block;
-  width: 64px;
-  height: 64px;
-  border-radius: 10px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.625rem;
   background-color: var(--bg_gray);
   position: absolute;
   bottom: 0rem;
@@ -737,7 +743,7 @@ body {
   left: 0rem;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .game_img{
   object-fit: cover;
@@ -780,7 +786,7 @@ body {
   text-align: center
 }
 .partners_content{
-  max-width: 460px;
+  max-width: 28.75rem;
   margin: auto;
 }
 /* ..... end main .....*/
