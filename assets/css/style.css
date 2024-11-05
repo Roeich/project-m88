@@ -194,6 +194,9 @@ body {
 }
 
 @media(min-width:1200px){
+  html{
+    font-size: 13px;
+  }
   .container{
     max-width: 90rem;
   }
@@ -201,12 +204,17 @@ body {
     max-width: 69.375rem;
   }
 }
-@media(min-width:1200px){
-  .container-fluid{
-    max-width: 1920px;
+@media(min-width:1400px){
+  html{
+    font-size: 16px;
   }
 }
-@media(min-width:1920px){
+@media(min-width:1600px){
+  html{
+    font-size: 18px;
+  }
+}
+@media(min-width:1900px){
   html{
     font-size: 20px;
   }
@@ -219,6 +227,7 @@ body {
 .header_logo{
   width: 4.75rem;
   height: 2.875rem;
+  object-fit: contain;
 }
 /* header top */
 .header_top{
@@ -343,6 +352,34 @@ body {
   padding: 0.6em 1.2em;
   background: #484c56 !important;
 }
+.btn_liveHelp i{
+  color: var(--c_secondary);
+}
+@media(max-width:767.98px){
+  :root{
+    --space_top: 5.8rem;
+    --space_bottom: 3.8rem;
+  }
+  .header_top {
+    padding: 0.8rem 0rem;
+  }
+  .header_logo {
+    width: 3.7rem;
+    height: 2.2rem;
+  }
+  .header_navbar .nav-item {
+    font-size: var(--fs_10);
+  }
+  .nav_indicator {
+    width: 4rem;
+    height: 4rem;
+  }
+  .btn_liveHelp {
+    font-size: var(--fs_12);
+    right: 0.8rem;
+    bottom: 4.5rem;
+  }
+}
 /* ..... end header .....*/
 
 /* ..... start main .....*/
@@ -382,7 +419,7 @@ body {
     width: 50%;
   }
 }
-@media(max-width:991.98px){
+@media(max-width:767.98px){
   .main_left{
     order: 2;
   }
