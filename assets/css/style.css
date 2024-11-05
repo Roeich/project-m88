@@ -171,6 +171,9 @@ body {
 .btn_dark:active{
   background: var(--bg_gray);
 }
+.btn:active{
+  transform: scale(0.95);
+}
 .dropdown-menu {
   --bs-dropdown-padding-x: 0.5rem;
   --bs-dropdown-padding-y: 0.5rem;
@@ -182,7 +185,13 @@ body {
 .dropdown-item{
   border-radius: 0.5rem;
 }
-
+.hide_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide_scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
 
 @media(min-width:1200px){
   .container{
@@ -305,6 +314,16 @@ body {
   background-color: var(--bg_primary);
   height: 2rem;
   overflow: hidden;
+}
+.btn_liveHelp{
+  font-size: var(--fs_16);
+  position: fixed;
+  z-index: 100;
+  right: 1rem;
+  bottom: 5.5rem;
+  border-radius: 50rem;
+  padding: 0.6em 1.2em;
+  background: #484c56 !important;
 }
 /* ..... end header .....*/
 
@@ -616,7 +635,70 @@ body {
   background-size: contain,contain,100% 100%;
   background-position: left,right,center;
 }
-
+/* site tabs */
+.site_tabs{
+  font-size: var(--fs_13);
+  display: flex;
+  list-style: none;
+  overflow-x: auto;
+  padding: 0rem;
+}
+.site_tab{
+  margin-right: 0.8rem;
+  cursor:pointer;
+  position: relative;
+}
+.site_tab a{
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.site_tab img{
+  width: 72px;
+  height: 80px;
+  object-fit: contain;
+  object-position: bottom center;
+  position: relative;
+  transition: 0.3s;
+}
+.site_tab:hover img{
+  transform: scale(1.05) translateY(-10%);
+}
+.site_tab::before{
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+  background-color: var(--bg_gray);
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* filter tabs */
+.filter_tabs{
+  font-size: var(--fs_13);
+  display: flex;
+  list-style: none;
+  padding: 0rem 0.8rem;
+  border-radius: 50rem;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9999999999999999) 100%);
+  overflow-x: auto;
+}
+.filter_tab{
+  padding: 0.3rem;
+  margin-right: 1.2rem;
+  border-bottom: 2px solid transparent;
+  cursor:pointer;
+}
+.filter_tab:hover{
+  color: var(--c_secondary);
+}
+.filter_tab.active{
+  color: var(--c_secondary);
+  border-color: var(--c_secondary);
+}
 /* game cards */
 .game_card{
   color: var(--c_white);
